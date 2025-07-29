@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Baby</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #1c1b33, #ffb6c1);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #ff69b4;
+      color: white;
+      padding: 20px 40px;
+      font-size: 26px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .btn:hover {
+      background-color: #ff1493;
+      transform: scale(1.08);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 20px rgba(255, 105, 180, 0.6); }
+      50% { box-shadow: 0 0 40px rgba(255, 105, 180, 0.9); }
+      100% { box-shadow: 0 0 20px rgba(255, 105, 180, 0.6); }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sweet music autoplay -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <div class="container">
+    <button class="btn" onclick="window.location.href='kedua.html'">Klik sini baby 💖</button>
+  </div>
+
+</body>
+</html>
